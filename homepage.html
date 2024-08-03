@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    
+    <style>
+        body {
+            background:url(background..jpg);
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+           
+        }
+      
+        ul {
+            margin-top: 3%;
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        li a:hover {
+            text-decoration: none;
+        }
+        li {
+            display: block;
+            
+           
+        }
+        li a
+        {
+            color: white;
+
+        }
+        li a:hover
+        {
+            color: brown;
+        }
+        .navbar {
+            
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color:black;
+            padding: 10px 0;
+            z-index: 1000; /* Ensures the navbar is above other content */
+            
+        }
+        .conainer-fluid
+        {
+            position: fixed;
+        }
+        .content-wrapper {
+            margin-top: 80px; /* Adjust according to navbar height */
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+        }
+        .description {
+            
+         
+            margin-top: 80px;
+       ;
+            margin-left: 35px;
+            padding-left: 100px;
+            font-size: 100px;
+            color: rgb(204, 145, 18);
+            width: 40%;
+            margin-right: 20px; /* Space between the description and the carousel */
+        }
+        .carousel-container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .carousel-item {
+            margin-top: 60px;
+            height: 100vh;
+            min-height: 300px;
+            background-position: center;
+            background-size: cover;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .logo {
+            margin-top: -90;
+            margin-bottom: 0;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: block;
+        }
+        .logo img {
+            height: 100px;
+            margin-left: -25px;
+        }
+        footer {
+    
+    background-color:black;
+    padding: 20px 0px;
+    padding-left: 500px;
+}
+
+footer ul {
+    padding-left: 500px;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+   
+    margin: 5px 0;
+}
+
+footer .footer-logo img {
+    max-width: 100px;
+}
+
+footer .text-center {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <ul>
+                    <li class="active"><a href="secondpage.html">About</a></li>
+                    <li><a href="thirdpage.html">Trip Planner</a></li>
+                    <li><a href="homepage.html">home</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="evlogo.svg" alt=""><br>EV GO
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+       
+        <div class="carousel-container">
+            <!-- Carousel Structure -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!-- Carousel Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <a href="thirdpage.html"> <div class="carousel-item active" style="background-image: url('Tesla_Model_Y.jpg');"></a>
+                        <span style="font-size: 100px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 30px;">want to go for <br><span style="margin-left: 30px;color: brown;">a trip?</span></span>
+                        
+                    </div>
+                    <a href=""><div class="carousel-item" style="background-image: url('charging.webp');"></a>
+                        <div style="margin-top: 0px;margin-left: 50px;">
+                    <span style=" font-size: 90px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 0px;color:black;">charging stations <div style="margin-left: 30px;color: midnightblue;"></div></span>
+                </div>
+                    
+                    </div>
+                    <a href=""> <div class="carousel-item" style="background-image: url('hotel.jpg');"></a>
+                    <div class="carousel-item" style="background-image: url('hotel.jpg');">
+                        <span style="font-size: 100px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 30px;color: white;">prebook your <span style="margin-left: 30px;color: midnightblue;">stay!</span></span>
+                        
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- Footer -->
+     <footer class="bg-black text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Provider</a></li>
+                        <li><a href="#" class="text-dark">Settings</a></li>
+                        <li><a href="#" class="text-dark">Contact</a></li>
+                        <li><a href="#" class="text-dark">Privacy</a></li>
+                        <li><a href="#" class="text-dark">Social Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-black text-white">
+
+        </div>
+    </footer>
+    </div>
+     
+   
+</body>
+</html>
+
+
+
+
+
+
